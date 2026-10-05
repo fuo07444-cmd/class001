@@ -36,21 +36,7 @@ function init() {
   cube.castShadow = true;
   scene.add(cube);
 
-  // --- 円柱 ---
-  const cylGeometry = new THREE.CylinderGeometry(1, 1, 2, 32);
-  const cylMaterial = new THREE.MeshStandardMaterial({ color: 0xff0000 });
-  cylinder = new THREE.Mesh(cylGeometry, cylMaterial);
-  cylinder.position.x = 0;
-  cylinder.castShadow = true;
-  scene.add(cylinder);
-
-  // --- 円錐（縦長） ---
-  const coneGeometry = new THREE.ConeGeometry(1.3, 2, 32);
-  const coneMaterial = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
-  cone = new THREE.Mesh(coneGeometry, coneMaterial);
-  cone.position.x = 3;
-  cone.castShadow = true;
-  scene.add(cone);
+ 
 
   window.addEventListener("resize", onWindowResize);
 }
